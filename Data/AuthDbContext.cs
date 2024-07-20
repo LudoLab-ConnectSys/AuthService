@@ -13,6 +13,8 @@ namespace AuthService.Data
         public DbSet<Usuario> Usuario { get; set; }
         public DbSet<Rol> Rol { get; set; }
         public DbSet<UsuarioRol> UsuarioRol { get; set; }
+        public DbSet<Instructor> Instructor { get; set; }
+        public DbSet<Estudiante> Estudiante { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -25,6 +27,16 @@ namespace AuthService.Data
                 .HasOne(ur => ur.Rol)
                 .WithMany()
                 .HasForeignKey(ur => ur.RolId);
+
+            modelBuilder.Entity<Instructor>()
+                .HasOne(i => i.Usuario)
+                .WithMany()
+                .HasForeignKey(i => i.IdUsuario);
+
+            modelBuilder.Entity<Estudiante>()
+                .HasOne(e => e.Usuario)
+                .WithMany()
+                .HasForeignKey(e => e.IdUsuario);
         }
     }
 }

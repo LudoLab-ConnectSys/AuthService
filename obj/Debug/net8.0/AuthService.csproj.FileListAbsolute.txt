@@ -137,3 +137,4 @@ D:\Universidad\Tesis\Desarrollo\Frontend\Version02\Security\AuthService\obj\Debu
 D:\Universidad\Tesis\Desarrollo\Frontend\Version02\Security\AuthService\obj\Debug\net8.0\AuthService.pdb
 D:\Universidad\Tesis\Desarrollo\Frontend\Version02\Security\AuthService\obj\Debug\net8.0\AuthService.genruntimeconfig.cache
 D:\Universidad\Tesis\Desarrollo\Frontend\Version02\Security\AuthService\obj\Debug\net8.0\ref\AuthService.dll
+D:\Universidad\Tesis\Desarrollo\Frontend\Version02\Security\AuthService\obj\Debug\net8.0\AuthService.sourcelink.json

@@ -22,8 +22,8 @@ namespace AuthService.Services
         public async Task<LoginResponse?> Login(LoginRequest loginModel)
         {
             // Buscar el usuario por cédula o pasaporte
-            var usuario =
-                await _context.Usuario.SingleOrDefaultAsync(u => u.CedulaUsuario == loginModel.Identification);
+            var usuario = await _context.Usuario
+                .SingleOrDefaultAsync(u => u.CedulaUsuario == loginModel.Identification);
 
             if (usuario == null || !VerifyPassword(loginModel.Password, usuario.HashContrasena))
             {
@@ -40,10 +40,21 @@ namespace AuthService.Services
                 return null;
             }
 
+            // Obtener idInstructor y idEstudiante
+            var instructor = await _context.Instructor.SingleOrDefaultAsync(i => i.IdUsuario == usuario.IdUsuario);
+            var estudiante = await _context.Estudiante.SingleOrDefaultAsync(e => e.IdUsuario == usuario.IdUsuario);
+
             var token = await GenerateJwtToken(usuario, loginModel.Rol);
 
-            return new LoginResponse { Token = token };
+            return new LoginResponse
+            {
+                Token = token,
+                IdInstructor = instructor?.IdInstructor,
+                IdEstudiante = estudiante?.IdEstudiante,
+                NombreUsuario = usuario.NombreUsuario
+            };
         }
+
 
         public async Task<string> HashPassword(string password)
         {

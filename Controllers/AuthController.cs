@@ -15,7 +15,7 @@ namespace AuthService.Controllers
         {
             _authService = authService;
         }
-
+        
         [HttpPost("login")]
         [AllowAnonymous]
         public async Task<ActionResult> Login([FromBody] LoginRequest loginModel)
@@ -29,6 +29,7 @@ namespace AuthService.Controllers
 
             return Ok(result);
         }
+
 
         [HttpPost("HashPassword")]
         //[Authorize(Policy = "AdminPolicy")]
