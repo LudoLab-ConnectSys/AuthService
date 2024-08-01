@@ -51,6 +51,7 @@ namespace AuthService.Services
                 Token = token,
                 IdInstructor = instructor?.IdInstructor,
                 IdEstudiante = estudiante?.IdEstudiante,
+                IdUsuario = usuario.IdUsuario,
                 NombreUsuario = usuario.NombreUsuario
             };
         }

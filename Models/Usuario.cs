@@ -13,7 +13,7 @@ namespace AuthService.Models
 
         [Required]
         [StringLength(150)]
-        [Column("HashContrasena")]
+        [Column("contrasena")]
         public string HashContrasena { get; set; } = string.Empty;
 
         [Required]

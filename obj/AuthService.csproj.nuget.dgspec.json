@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Universidad\\Tesis\\Desarrollo\\Frontend\\Version02\\Security\\AuthService\\AuthService.csproj": {}
+    "D:\\Universidad\\Tesis\\Desarrollo\\Backend\\AuthService\\AuthService.csproj": {}
   },
   "projects": {
-    "D:\\Universidad\\Tesis\\Desarrollo\\Frontend\\Version02\\Security\\AuthService\\AuthService.csproj": {
+    "D:\\Universidad\\Tesis\\Desarrollo\\Backend\\AuthService\\AuthService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Universidad\\Tesis\\Desarrollo\\Frontend\\Version02\\Security\\AuthService\\AuthService.csproj",
+        "projectUniqueName": "D:\\Universidad\\Tesis\\Desarrollo\\Backend\\AuthService\\AuthService.csproj",
         "projectName": "AuthService",
-        "projectPath": "D:\\Universidad\\Tesis\\Desarrollo\\Frontend\\Version02\\Security\\AuthService\\AuthService.csproj",
+        "projectPath": "D:\\Universidad\\Tesis\\Desarrollo\\Backend\\AuthService\\AuthService.csproj",
         "packagesPath": "C:\\Users\\ginno\\.nuget\\packages\\",
-        "outputPath": "D:\\Universidad\\Tesis\\Desarrollo\\Frontend\\Version02\\Security\\AuthService\\obj\\",
+        "outputPath": "D:\\Universidad\\Tesis\\Desarrollo\\Backend\\AuthService\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

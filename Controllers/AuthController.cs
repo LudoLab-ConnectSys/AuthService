@@ -31,8 +31,7 @@ namespace AuthService.Controllers
         }
 
 
-        [HttpPost("HashPassword")]
-        //[Authorize(Policy = "AdminPolicy")]
+        [HttpPost("hash")]
         public async Task<ActionResult<string>> HashPassword([FromBody] HashPasswordRequest request)
         {
             var hashedPassword = await _authService.HashPassword(request.Password);
