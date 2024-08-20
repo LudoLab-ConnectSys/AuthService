@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ygAtMbCSmnDe8wbW7FAwlCJi0vqvy3eFdmlAFncE2IOrwBZZtP+N7U3z/HtDAml8b1vYrkFuZ8B2VehU7NjslA==",
+  "dgSpecHash": "kB3EF4mj+0iaWRXUCd5kQ68ORgo+exlHR7j5Zqx3owZDzQsnmSEw7HB92daqNO2o5BxPsjI/IQtJlzcJNhvXWA==",
   "success": true,
-  "projectFilePath": "D:\\Universidad\\Tesis\\Desarrollo\\Backend\\AuthService\\AuthService.csproj",
+  "projectFilePath": "D:\\Universidad\\Tesis\\Desarrollo\\Todo\\Version05\\AuthService\\AuthService.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ginno\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\ginno\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
